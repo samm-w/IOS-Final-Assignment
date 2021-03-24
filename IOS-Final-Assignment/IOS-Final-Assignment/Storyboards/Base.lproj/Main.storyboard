@@ -147,6 +147,17 @@
                     <view key="view" contentMode="scaleToFill" id="LlZ-Hq-Anh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W2I-3e-X3j">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Vaccine and Testing Locations" id="PFQ-23-DPt">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="t7M-s4-YJH"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="wjz-rJ-M0L"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
