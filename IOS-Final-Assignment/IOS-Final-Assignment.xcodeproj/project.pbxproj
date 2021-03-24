@@ -20,6 +20,7 @@
 		FDC87E6A26090D8800BA8201 /* WhoInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87E6926090D8800BA8201 /* WhoInfoViewController.swift */; };
 		FDC87E6D26090D9800BA8201 /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87E6C26090D9800BA8201 /* TwitterViewController.swift */; };
 		FDC87E702609100800BA8201 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87E6F2609100800BA8201 /* AboutUsViewController.swift */; };
+		FDC87E7D260BC25700BA8201 /* LocationSearchTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87E7C260BC25700BA8201 /* LocationSearchTableTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		FDC87E6926090D8800BA8201 /* WhoInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoInfoViewController.swift; sourceTree = "<group>"; };
 		FDC87E6C26090D9800BA8201 /* TwitterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
 		FDC87E6F2609100800BA8201 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		FDC87E7C260BC25700BA8201 /* LocationSearchTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTableTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				FDC87E582608DBA100BA8201 /* Classes */,
 				FDC87E572608DB9200BA8201 /* Storyboards */,
 				FDC87E502608DA4D00BA8201 /* Info.plist */,
+				FDC87E7C260BC25700BA8201 /* LocationSearchTableTableViewController.swift */,
 			);
 			path = "IOS-Final-Assignment";
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				FDC87E432608DA4D00BA8201 /* AppDelegate.swift in Sources */,
 				FDC87E6126090D4600BA8201 /* VaccineViewController.swift in Sources */,
 				FDC87E6D26090D9800BA8201 /* TwitterViewController.swift in Sources */,
+				FDC87E7D260BC25700BA8201 /* LocationSearchTableTableViewController.swift in Sources */,
 				FDC87E452608DA4D00BA8201 /* SceneDelegate.swift in Sources */,
 				FDC87E6A26090D8800BA8201 /* WhoInfoViewController.swift in Sources */,
 			);

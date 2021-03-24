@@ -44,7 +44,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Vaccines and Testing"/>
                                 <connections>
-                                    <segue destination="BxH-se-aRz" kind="presentation" id="rQP-Jc-Ta6"/>
+                                    <segue destination="2r8-vu-FkH" kind="presentation" id="rQP-Jc-Ta6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erp-46-bHK">
@@ -153,18 +153,62 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Vaccine and Testing Locations" id="PFQ-23-DPt">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="t7M-s4-YJH"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="t7M-s4-YJH">
+                                            <connections>
+                                                <segue destination="KNT-FR-gdv" kind="unwind" unwindAction="unwindToHomeVCWithSender:" id="q7l-hh-tDD"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AHN-Sm-e93">
+                                <rect key="frame" x="0.0" y="55" width="414" height="787"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BxH-se-aRz" id="no9-IP-WFN"/>
+                                </connections>
+                            </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wjz-rJ-M0L"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="M1Z-B7-s37"/>
+                    <connections>
+                        <outlet property="mapView" destination="AHN-Sm-e93" id="xL4-yT-O33"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P2v-uQ-IMa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="KNT-FR-gdv" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2967" y="78"/>
+            <point key="canvasLocation" x="3876.811594202899" y="77.678571428571431"/>
+        </scene>
+        <!--Location Search Table Table View Controller-->
+        <scene sceneID="zJJ-nP-jPo">
+            <objects>
+                <tableViewController storyboardIdentifier="LocationSearchTable" id="cp3-6s-OBU" customClass="LocationSearchTableTableViewController" customModule="IOS_Final_Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="LocationSearchTable" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="qLF-vy-1RS" customClass="LocationSearchTable">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="5aA-Bz-QjJ">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5aA-Bz-QjJ" id="rFk-Kv-nkm">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="cp3-6s-OBU" id="bZj-T5-h7g"/>
+                            <outlet property="delegate" destination="cp3-6s-OBU" id="veR-K1-N5y"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xrt-Sn-Rja" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4692.753623188406" y="87.723214285714278"/>
         </scene>
         <!--Who Info View Controller-->
         <scene sceneID="KHf-aV-aW3">
@@ -181,6 +225,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YbB-g1-HhH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="242" y="839"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qJo-Xc-f8p">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2r8-vu-FkH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="axw-NT-XK5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BxH-se-aRz" kind="relationship" relationship="rootViewController" id="rxD-oM-HiL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s8F-09-btD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2966.666666666667" y="77.678571428571431"/>
         </scene>
     </scenes>
     <resources>
