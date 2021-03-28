@@ -20,6 +20,8 @@
 		FDC87E6A26090D8800BA8201 /* WhoInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87E6926090D8800BA8201 /* WhoInfoViewController.swift */; };
 		FDC87E6D26090D9800BA8201 /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87E6C26090D9800BA8201 /* TwitterViewController.swift */; };
 		FDC87E702609100800BA8201 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87E6F2609100800BA8201 /* AboutUsViewController.swift */; };
+		FDC87E82260C131900BA8201 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC87E81260C131900BA8201 /* MapKit.framework */; };
+		FDC87EC42610D83300BA8201 /* SiteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87EC32610D83300BA8201 /* SiteCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		FDC87E6926090D8800BA8201 /* WhoInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoInfoViewController.swift; sourceTree = "<group>"; };
 		FDC87E6C26090D9800BA8201 /* TwitterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
 		FDC87E6F2609100800BA8201 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		FDC87E81260C131900BA8201 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FDC87EC32610D83300BA8201 /* SiteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiteCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDC87E82260C131900BA8201 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +61,7 @@
 			children = (
 				FDC87E412608DA4D00BA8201 /* IOS-Final-Assignment */,
 				FDC87E402608DA4D00BA8201 /* Products */,
+				FDC87E80260C131900BA8201 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +98,7 @@
 		FDC87E582608DBA100BA8201 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				FDC87EC32610D83300BA8201 /* SiteCell.swift */,
 				FDC87E422608DA4D00BA8201 /* AppDelegate.swift */,
 				FDC87E442608DA4D00BA8201 /* SceneDelegate.swift */,
 			);
@@ -126,6 +133,14 @@
 				FDC87E6F2609100800BA8201 /* AboutUsViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FDC87E80260C131900BA8201 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDC87E81260C131900BA8201 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDC87E702609100800BA8201 /* AboutUsViewController.swift in Sources */,
+				FDC87EC42610D83300BA8201 /* SiteCell.swift in Sources */,
 				FDC87E6726090D7700BA8201 /* CountryStatsViewController.swift in Sources */,
 				FDC87E5E26090D3500BA8201 /* AwarenessViewController.swift in Sources */,
 				FDC87E6426090D5400BA8201 /* CountryListViewController.swift in Sources */,

@@ -44,7 +44,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Vaccines and Testing"/>
                                 <connections>
-                                    <segue destination="BxH-se-aRz" kind="presentation" id="rQP-Jc-Ta6"/>
+                                    <segue destination="BxH-se-aRz" kind="presentation" id="DpZ-gt-RjS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erp-46-bHK">
@@ -52,7 +52,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="WHO Information"/>
                                 <connections>
-                                    <segue destination="UoS-6i-KYw" kind="push" id="1hk-1r-Sx6"/>
+                                    <segue destination="UoS-6i-KYw" kind="presentation" id="7At-kx-f9i"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rzh-ag-0gb">
@@ -87,11 +87,27 @@
                     <view key="view" contentMode="scaleToFill" id="En9-q4-9uk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bo3-Nz-a1X">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Country List" id="kFL-1P-ohc">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="o3w-XC-e3L">
+                                            <connections>
+                                                <segue destination="KG9-J6-ITK" kind="unwind" unwindAction="unwindToHomeVCWithSender:" id="Jie-QG-MR2"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="sbr-o8-Z8l"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qzk-dL-sv5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="KG9-J6-ITK" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1042" y="110"/>
         </scene>
@@ -102,6 +118,17 @@
                     <view key="view" contentMode="scaleToFill" id="L9E-FW-Iqp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lQV-wW-hrx">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Covid 19 Awareness" id="fzm-Lg-BGc">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="RYv-C9-2ff"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="GZw-g9-VY4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -117,11 +144,27 @@
                     <view key="view" contentMode="scaleToFill" id="Kof-yz-M1J">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V0d-qU-fGo">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Twitter Updates" id="4OC-CI-TtY">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="oPS-ef-17w">
+                                            <connections>
+                                                <segue destination="pkR-7E-7xE" kind="unwind" unwindAction="unwindToHomeVCWithSender:" id="mmG-qM-EvZ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="F7o-r2-qhH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LDV-yC-IZI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="pkR-7E-7xE" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1958" y="127"/>
         </scene>
@@ -132,13 +175,49 @@
                     <view key="view" contentMode="scaleToFill" id="bgq-Lh-MsV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yiy-XM-M1H">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="About Us" id="hJl-8k-6iG">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="f9C-wS-KSm">
+                                            <connections>
+                                                <segue destination="KYL-do-N6r" kind="unwind" unwindAction="unwindToHomeVCWithSender:" id="Vhz-sV-HVd"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RdP-x3-c9B">
+                                <rect key="frame" x="0.0" y="56" width="414" height="786"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="8Fa-Ld-I7g"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xqr-6D-HWC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="KYL-do-N6r" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2045" y="871"/>
+            <point key="canvasLocation" x="2044.9275362318842" y="870.53571428571422"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0UG-7C-CTg">
+            <objects>
+                <viewController id="kfM-WQ-nOZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TWZ-x9-QyY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="bc6-xd-gub"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="769-wE-a1I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2809" y="900"/>
         </scene>
         <!--Vaccine View Controller-->
         <scene sceneID="8HV-3M-HXx">
@@ -147,13 +226,40 @@
                     <view key="view" contentMode="scaleToFill" id="LlZ-Hq-Anh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W2I-3e-X3j">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Vaccine and Testing Locations" id="PFQ-23-DPt">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="t7M-s4-YJH">
+                                            <connections>
+                                                <segue destination="KNT-FR-gdv" kind="unwind" unwindAction="unwindToHomeVCWithSender:" id="q7l-hh-tDD"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AHN-Sm-e93">
+                                <rect key="frame" x="0.0" y="55" width="414" height="787"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BxH-se-aRz" id="no9-IP-WFN"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="wjz-rJ-M0L"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="M1Z-B7-s37"/>
+                    <connections>
+                        <outlet property="mapView" destination="AHN-Sm-e93" id="xL4-yT-O33"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P2v-uQ-IMa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="KNT-FR-gdv" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2967" y="78"/>
+            <point key="canvasLocation" x="2996" y="146"/>
         </scene>
         <!--Who Info View Controller-->
         <scene sceneID="KHf-aV-aW3">
@@ -162,14 +268,48 @@
                     <view key="view" contentMode="scaleToFill" id="930-96-0zh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uPM-N5-JzM">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="WHO Website" id="EET-6I-5XI">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="Cgy-Xp-4gn">
+                                            <connections>
+                                                <segue destination="nYW-sb-A61" kind="unwind" unwindAction="unwindToHomeVCWithSender:" id="jDP-nr-umU"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fjf-OZ-4gg">
+                                <rect key="frame" x="0.0" y="58" width="414" height="784"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="JvI-Ph-4rg">
+                                <rect key="frame" x="197" y="440" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" red="0.60739082479999995" green="0.98791018760000004" blue="1" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="T9b-RH-38l"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="ChG-G1-W05"/>
+                    <connections>
+                        <outlet property="activity" destination="JvI-Ph-4rg" id="bWi-qm-S8b"/>
+                        <outlet property="webView" destination="fjf-OZ-4gg" id="uJJ-Nc-S15"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YbB-g1-HhH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="nYW-sb-A61" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="242" y="839"/>
+            <point key="canvasLocation" x="368" y="871"/>
         </scene>
     </scenes>
     <resources>
