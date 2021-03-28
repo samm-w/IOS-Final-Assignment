@@ -6,11 +6,30 @@
 //
 
 import UIKit
+import WebKit
 
-class WhoInfoViewController: UIViewController {
+class WhoInfoViewController: UIViewController, WKNavigationDelegate{
+    
+    @IBOutlet var webView: WKWebView!
+    @IBOutlet var activity: UIActivityIndicatorView!
+    
+    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        activity.isHidden = false
+        activity.startAnimating()
+    }
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        activity.isHidden = true
+        activity.stopAnimating()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let urlAddress = URL(string: "https://who.int/emergencies/diseases/novel-coronavirus-2019")
+        let url = URLRequest(url: urlAddress!)
+        webView.load(url)
+        webView.navigationDelegate = self
 
         // Do any additional setup after loading the view.
     }
