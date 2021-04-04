@@ -237,29 +237,51 @@
                                                 <segue destination="KNT-FR-gdv" kind="unwind" unwindAction="unwindToHomeVCWithSender:" id="q7l-hh-tDD"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Let's Go!" id="ywW-be-I5w">
+                                            <connections>
+                                                <action selector="findNewLocation" destination="BxH-se-aRz" id="HVW-8T-FfR"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AHN-Sm-e93">
-                                <rect key="frame" x="0.0" y="55" width="414" height="787"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Where Do you want to go?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VcM-yv-BLN">
+                                <rect key="frame" x="20" y="73" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <outlet property="delegate" destination="BxH-se-aRz" id="no9-IP-WFN"/>
+                                    <outlet property="delegate" destination="BxH-se-aRz" id="hTw-P9-bF2"/>
                                 </connections>
+                            </textField>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="s51-fv-g2e">
+                                <rect key="frame" x="0.0" y="122" width="414" height="379"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IPI-nm-uAp">
+                                <rect key="frame" x="0.0" y="497" width="414" height="345"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BxH-se-aRz" id="alV-Ih-vs9"/>
+                                    <outlet property="delegate" destination="BxH-se-aRz" id="Yf9-X7-kEq"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wjz-rJ-M0L"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="M1Z-B7-s37"/>
                     <connections>
-                        <outlet property="mapView" destination="AHN-Sm-e93" id="xL4-yT-O33"/>
+                        <outlet property="myMapView" destination="s51-fv-g2e" id="gPu-3x-U3m"/>
+                        <outlet property="myTableView" destination="IPI-nm-uAp" id="v6u-Cl-ZXD"/>
+                        <outlet property="tfLocEntered" destination="VcM-yv-BLN" id="R1b-FO-nS5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P2v-uQ-IMa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="KNT-FR-gdv" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2996" y="146"/>
+            <point key="canvasLocation" x="2995.6521739130435" y="145.98214285714286"/>
         </scene>
         <!--Who Info View Controller-->
         <scene sceneID="KHf-aV-aW3">
