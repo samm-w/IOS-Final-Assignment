@@ -23,6 +23,9 @@
 		FDC87E82260C131900BA8201 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC87E81260C131900BA8201 /* MapKit.framework */; };
 		FDC87EC42610D83300BA8201 /* SiteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87EC32610D83300BA8201 /* SiteCell.swift */; };
 		FDC87EC8261A16BA00BA8201 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC87EC7261A16BA00BA8201 /* CoreLocation.framework */; };
+		FDC87ECD261F659000BA8201 /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FDC87ECC261F659000BA8201 /* song.mp3 */; };
+		FDC87ED1261F6A8200BA8201 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC87ED0261F6A8200BA8201 /* AVFoundation.framework */; };
+		FDC87ED3261F6A9000BA8201 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC87ED2261F6A9000BA8201 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		FDC87E81260C131900BA8201 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		FDC87EC32610D83300BA8201 /* SiteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiteCell.swift; sourceTree = "<group>"; };
 		FDC87EC7261A16BA00BA8201 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FDC87ECC261F659000BA8201 /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song.mp3; sourceTree = "<group>"; };
+		FDC87ED0261F6A8200BA8201 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FDC87ED2261F6A9000BA8201 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +57,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDC87ED3261F6A9000BA8201 /* QuartzCore.framework in Frameworks */,
 				FDC87EC8261A16BA00BA8201 /* CoreLocation.framework in Frameworks */,
 				FDC87E82260C131900BA8201 /* MapKit.framework in Frameworks */,
+				FDC87ED1261F6A8200BA8201 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +87,7 @@
 		FDC87E412608DA4D00BA8201 /* IOS-Final-Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				FDC87ECB261F645800BA8201 /* Sounds */,
 				FDC87E5B2608DCF500BA8201 /* View Controllers */,
 				FDC87E5A2608DC7900BA8201 /* Databases */,
 				FDC87E592608DC7300BA8201 /* Images */,
@@ -141,10 +150,20 @@
 		FDC87E80260C131900BA8201 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FDC87ED2261F6A9000BA8201 /* QuartzCore.framework */,
+				FDC87ED0261F6A8200BA8201 /* AVFoundation.framework */,
 				FDC87EC7261A16BA00BA8201 /* CoreLocation.framework */,
 				FDC87E81260C131900BA8201 /* MapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FDC87ECB261F645800BA8201 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				FDC87ECC261F659000BA8201 /* song.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDC87ECD261F659000BA8201 /* song.mp3 in Resources */,
 				FDC87E4F2608DA4D00BA8201 /* LaunchScreen.storyboard in Resources */,
 				FDC87E4C2608DA4D00BA8201 /* Assets.xcassets in Resources */,
 				FDC87E4A2608DA4D00BA8201 /* Main.storyboard in Resources */,
