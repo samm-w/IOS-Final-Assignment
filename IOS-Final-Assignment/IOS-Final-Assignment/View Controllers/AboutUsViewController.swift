@@ -9,10 +9,15 @@ import UIKit
 
 class AboutUsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var listData: Array<String> = []
+    var devListData = ["Sam Whelan", "Edmund Leung", "Anthony Doss"]
+    var siteData = [ "https://github.com/samm-w", "https://github.com/leunged", "https://github.com/AnthonyDoss" ]
+    
+    @IBAction func unwindToAboutUsViewController(sender: UIStoryboardSegue){
+        
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return listData.count
+        return devListData.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -20,17 +25,24 @@ class AboutUsViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let tableCell = tableView.dequeueReusableCell(withIdentifier: "cell") ?? UITableViewCell()
+        //let tableCell = tableView.dequeueReusableCell(withIdentifier: "cell") ?? UITableViewCell()
+        let tableCell = tableView.dequeueReusableCell(withIdentifier: "cell") as? SiteCell ?? SiteCell(style: .default, reuseIdentifier: "cell")
         let rowNum = indexPath.row
-        tableCell.textLabel?.text = listData[rowNum]
-        tableCell.textLabel?.font = UIFont.systemFont(ofSize: 50)
+        tableCell.primaryLabel.text = devListData[rowNum]
+        tableCell.secondaryLabel.text = siteData[rowNum]
+        tableCell.accessoryType = .disclosureIndicator
         
         return tableCell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let mainDelegate = UIApplication.shared as! AppDelegate
+        mainDelegate.selectedURL = siteData[indexPath.row]
+        performSegue(withIdentifier: "ChooseSegueToView", sender: nil)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        listData = ["Sam Whelan", "Anthony Doss", "Edmund Leung"]
 
         // Do any additional setup after loading the view.
     }
