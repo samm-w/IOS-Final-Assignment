@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F5FB8CC12620A1E400CD104D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5FB8CC02620A1E400CD104D /* WebKit.framework */; };
+		F5FFAE8C261F91AC00BEB4A3 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FFAE8B261F91AC00BEB4A3 /* NewsViewController.swift */; };
+		F5FFAE8F261F951900BEB4A3 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FFAE8E261F951900BEB4A3 /* Article.swift */; };
+		F5FFAE92261FC79100BEB4A3 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FFAE91261FC79100BEB4A3 /* ArticleCell.swift */; };
+		F5FFAE96261FED2600BEB4A3 /* NewsWebviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FFAE95261FED2600BEB4A3 /* NewsWebviewViewController.swift */; };
 		FDC87E432608DA4D00BA8201 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87E422608DA4D00BA8201 /* AppDelegate.swift */; };
 		FDC87E452608DA4D00BA8201 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87E442608DA4D00BA8201 /* SceneDelegate.swift */; };
 		FDC87E472608DA4D00BA8201 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87E462608DA4D00BA8201 /* ViewController.swift */; };
@@ -26,6 +31,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F5FB8CC02620A1E400CD104D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		F5FFAE8B261F91AC00BEB4A3 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		F5FFAE8E261F951900BEB4A3 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		F5FFAE91261FC79100BEB4A3 /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		F5FFAE95261FED2600BEB4A3 /* NewsWebviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsWebviewViewController.swift; sourceTree = "<group>"; };
 		FDC87E3F2608DA4D00BA8201 /* IOS-Final-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-Final-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDC87E422608DA4D00BA8201 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDC87E442608DA4D00BA8201 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +63,7 @@
 			files = (
 				FDC87EC8261A16BA00BA8201 /* CoreLocation.framework in Frameworks */,
 				FDC87E82260C131900BA8201 /* MapKit.framework in Frameworks */,
+				F5FB8CC12620A1E400CD104D /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +115,8 @@
 				FDC87EC32610D83300BA8201 /* SiteCell.swift */,
 				FDC87E422608DA4D00BA8201 /* AppDelegate.swift */,
 				FDC87E442608DA4D00BA8201 /* SceneDelegate.swift */,
+				F5FFAE8E261F951900BEB4A3 /* Article.swift */,
+				F5FFAE91261FC79100BEB4A3 /* ArticleCell.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -134,6 +147,8 @@
 				FDC87E6926090D8800BA8201 /* WhoInfoViewController.swift */,
 				FDC87E6C26090D9800BA8201 /* TwitterViewController.swift */,
 				FDC87E6F2609100800BA8201 /* AboutUsViewController.swift */,
+				F5FFAE8B261F91AC00BEB4A3 /* NewsViewController.swift */,
+				F5FFAE95261FED2600BEB4A3 /* NewsWebviewViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -141,6 +156,7 @@
 		FDC87E80260C131900BA8201 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F5FB8CC02620A1E400CD104D /* WebKit.framework */,
 				FDC87EC7261A16BA00BA8201 /* CoreLocation.framework */,
 				FDC87E81260C131900BA8201 /* MapKit.framework */,
 			);
@@ -217,14 +233,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5FFAE8F261F951900BEB4A3 /* Article.swift in Sources */,
 				FDC87E702609100800BA8201 /* AboutUsViewController.swift in Sources */,
 				FDC87EC42610D83300BA8201 /* SiteCell.swift in Sources */,
 				FDC87E6726090D7700BA8201 /* CountryStatsViewController.swift in Sources */,
+				F5FFAE92261FC79100BEB4A3 /* ArticleCell.swift in Sources */,
+				F5FFAE8C261F91AC00BEB4A3 /* NewsViewController.swift in Sources */,
 				FDC87E5E26090D3500BA8201 /* AwarenessViewController.swift in Sources */,
 				FDC87E6426090D5400BA8201 /* CountryListViewController.swift in Sources */,
 				FDC87E472608DA4D00BA8201 /* ViewController.swift in Sources */,
 				FDC87E432608DA4D00BA8201 /* AppDelegate.swift in Sources */,
 				FDC87E6126090D4600BA8201 /* VaccineViewController.swift in Sources */,
+				F5FFAE96261FED2600BEB4A3 /* NewsWebviewViewController.swift in Sources */,
 				FDC87E6D26090D9800BA8201 /* TwitterViewController.swift in Sources */,
 				FDC87E452608DA4D00BA8201 /* SceneDelegate.swift in Sources */,
 				FDC87E6A26090D8800BA8201 /* WhoInfoViewController.swift in Sources */,
