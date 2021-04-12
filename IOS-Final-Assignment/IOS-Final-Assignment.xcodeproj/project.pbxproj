@@ -28,6 +28,10 @@
 		FDC87ED3261F6A9000BA8201 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC87ED2261F6A9000BA8201 /* QuartzCore.framework */; };
 		FDC87ED62620EBAE00BA8201 /* LinkedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87ED52620EBAE00BA8201 /* LinkedInViewController.swift */; };
 		FDC87ED92620F80B00BA8201 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC87ED82620F80B00BA8201 /* WebKit.framework */; };
+		FDC87EE0262486E100BA8201 /* AboutUs.db in Resources */ = {isa = PBXBuildFile; fileRef = FDC87EDF262486E100BA8201 /* AboutUs.db */; };
+		FDC87EE32624A45100BA8201 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87EE22624A45100BA8201 /* Data.swift */; };
+		FDC87EE62624BDF200BA8201 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC87EE52624BDEA00BA8201 /* libsqlite3.0.tbd */; };
+		FDC87EE92624BE0400BA8201 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC87EE82624BDFC00BA8201 /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +58,10 @@
 		FDC87ED2261F6A9000BA8201 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		FDC87ED52620EBAE00BA8201 /* LinkedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedInViewController.swift; sourceTree = "<group>"; };
 		FDC87ED82620F80B00BA8201 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/PrivateFrameworks/WebKit.framework; sourceTree = SDKROOT; };
+		FDC87EDF262486E100BA8201 /* AboutUs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = AboutUs.db; sourceTree = "<group>"; };
+		FDC87EE22624A45100BA8201 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		FDC87EE52624BDEA00BA8201 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		FDC87EE82624BDFC00BA8201 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,8 @@
 			files = (
 				FDC87ED92620F80B00BA8201 /* WebKit.framework in Frameworks */,
 				FDC87ED3261F6A9000BA8201 /* QuartzCore.framework in Frameworks */,
+				FDC87EE92624BE0400BA8201 /* libsqlite3.tbd in Frameworks */,
+				FDC87EE62624BDF200BA8201 /* libsqlite3.0.tbd in Frameworks */,
 				FDC87EC8261A16BA00BA8201 /* CoreLocation.framework in Frameworks */,
 				FDC87E82260C131900BA8201 /* MapKit.framework in Frameworks */,
 				FDC87ED1261F6A8200BA8201 /* AVFoundation.framework in Frameworks */,
@@ -118,6 +128,7 @@
 				FDC87EC32610D83300BA8201 /* SiteCell.swift */,
 				FDC87E422608DA4D00BA8201 /* AppDelegate.swift */,
 				FDC87E442608DA4D00BA8201 /* SceneDelegate.swift */,
+				FDC87EE22624A45100BA8201 /* Data.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -133,6 +144,7 @@
 		FDC87E5A2608DC7900BA8201 /* Databases */ = {
 			isa = PBXGroup;
 			children = (
+				FDC87EDF262486E100BA8201 /* AboutUs.db */,
 			);
 			path = Databases;
 			sourceTree = "<group>";
@@ -156,6 +168,8 @@
 		FDC87E80260C131900BA8201 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FDC87EE82624BDFC00BA8201 /* libsqlite3.tbd */,
+				FDC87EE52624BDEA00BA8201 /* libsqlite3.0.tbd */,
 				FDC87ED82620F80B00BA8201 /* WebKit.framework */,
 				FDC87ED2261F6A9000BA8201 /* QuartzCore.framework */,
 				FDC87ED0261F6A8200BA8201 /* AVFoundation.framework */,
@@ -231,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDC87ECD261F659000BA8201 /* song.mp3 in Resources */,
+				FDC87EE0262486E100BA8201 /* AboutUs.db in Resources */,
 				FDC87E4F2608DA4D00BA8201 /* LaunchScreen.storyboard in Resources */,
 				FDC87E4C2608DA4D00BA8201 /* Assets.xcassets in Resources */,
 				FDC87E4A2608DA4D00BA8201 /* Main.storyboard in Resources */,
@@ -252,6 +267,7 @@
 				FDC87E472608DA4D00BA8201 /* ViewController.swift in Sources */,
 				FDC87E432608DA4D00BA8201 /* AppDelegate.swift in Sources */,
 				FDC87E6126090D4600BA8201 /* VaccineViewController.swift in Sources */,
+				FDC87EE32624A45100BA8201 /* Data.swift in Sources */,
 				FDC87ED62620EBAE00BA8201 /* LinkedInViewController.swift in Sources */,
 				FDC87E6D26090D9800BA8201 /* TwitterViewController.swift in Sources */,
 				FDC87E452608DA4D00BA8201 /* SceneDelegate.swift in Sources */,

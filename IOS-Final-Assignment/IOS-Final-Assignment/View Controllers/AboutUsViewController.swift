@@ -7,17 +7,17 @@
 
 import UIKit
 
-class AboutUsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class AboutUsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
-    var devListData = ["Sam Whelan", "Edmund Leung", "Anthony Doss"]
-    var siteData = [ "https://github.com/samm-w", "https://github.com/leunged", "https://github.com/AnthonyDoss" ]
+    
+    let mainDelegate = UIApplication.shared.delegate as! AppDelegate
     
     @IBAction func unwindToAboutUsViewController(sender: UIStoryboardSegue){
         
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return devListData.count
+        return mainDelegate.people.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -25,25 +25,22 @@ class AboutUsViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //let tableCell = tableView.dequeueReusableCell(withIdentifier: "cell") ?? UITableViewCell()
-        let tableCell = tableView.dequeueReusableCell(withIdentifier: "cell") as? SiteCell ?? SiteCell(style: .default, reuseIdentifier: "cell")
-        let rowNum = indexPath.row
-        tableCell.primaryLabel.text = devListData[rowNum]
-        tableCell.secondaryLabel.text = siteData[rowNum]
-        tableCell.accessoryType = .disclosureIndicator
         
+        let tableCell = tableView.dequeueReusableCell(withIdentifier: "cell") as? SiteCell ?? SiteCell(style: .default, reuseIdentifier: "cell")
+        
+        let rowNum = indexPath.row
+        tableCell.primaryLabel.text = mainDelegate.people[rowNum].name
+        tableCell.secondaryLabel.text = mainDelegate.people[rowNum].program
+        
+        tableCell.accessoryType = .disclosureIndicator
         return tableCell
+        
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let mainDelegate = UIApplication.shared as! AppDelegate
-        mainDelegate.selectedURL = siteData[indexPath.row]
-        performSegue(withIdentifier: "ChooseSegueToView", sender: nil)
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        mainDelegate.readDataFromDatabase()
         // Do any additional setup after loading the view.
     }
     
