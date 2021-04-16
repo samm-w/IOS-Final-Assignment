@@ -32,6 +32,7 @@
 		FDC87EE32624A45100BA8201 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87EE22624A45100BA8201 /* Data.swift */; };
 		FDC87EE62624BDF200BA8201 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC87EE52624BDEA00BA8201 /* libsqlite3.0.tbd */; };
 		FDC87EE92624BE0400BA8201 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC87EE82624BDFC00BA8201 /* libsqlite3.tbd */; };
+		FDC87EED262A0C2500BA8201 /* Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDC87EEC262A0C2500BA8201 /* Background.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		FDC87EE22624A45100BA8201 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		FDC87EE52624BDEA00BA8201 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		FDC87EE82624BDFC00BA8201 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		FDC87EEC262A0C2500BA8201 /* Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Background.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 		FDC87E592608DC7300BA8201 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				FDC87EEC262A0C2500BA8201 /* Background.jpg */,
 				FDC87E4B2608DA4D00BA8201 /* Assets.xcassets */,
 			);
 			path = Images;
@@ -249,6 +252,7 @@
 				FDC87E4F2608DA4D00BA8201 /* LaunchScreen.storyboard in Resources */,
 				FDC87E4C2608DA4D00BA8201 /* Assets.xcassets in Resources */,
 				FDC87E4A2608DA4D00BA8201 /* Main.storyboard in Resources */,
+				FDC87EED262A0C2500BA8201 /* Background.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

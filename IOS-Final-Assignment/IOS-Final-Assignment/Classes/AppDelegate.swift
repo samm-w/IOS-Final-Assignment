@@ -1,9 +1,10 @@
 //
 //  AppDelegate.swift
 //  IOS-Final-Assignment
-//
+//  Prinicpal Author: Sam Whelan
 //  Created by  on 3/22/21.
-//
+//  Description: Used to create any extra information on load, such as pulling in the users
+//  from the db into the app to be displayed
 
 import UIKit
 import SQLite3
@@ -11,20 +12,28 @@ import SQLite3
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    //The URL of each dev so that it can display based on who is selected
     var selectedURL: String = ""
+    //The name of the db to access
     var databaseName: String? = "AboutUs.db"
+    //The path to the db in the phone
     var databasePath: String?
+    //The array of devs that will be called in
     var people: [Data] = []
     
     
-
+    //Once the app has launched, this will search for the db in the phone, and create a db if
+    //one does not exist
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        //Used to find the db in the phones directories
         let documentPaths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
         
         let documentsDir = documentPaths[0]
         databasePath = documentsDir.appending("/" + databaseName!)
         
+        //These methods are here so that once the app is done, it will check to see if it
+        //has to make a db, and also read from it once done
         checkAndCreateDatabase()
         readDataFromDatabase()
         
@@ -32,11 +41,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
+    //Will read the data in from the db
     func readDataFromDatabase(){
         
         people.removeAll()
         var db: OpaquePointer? = nil
         
+        //Here to try and connect to the db, and then read the data from it
         if sqlite3_open(self.databasePath, &db) == SQLITE_OK{
             
             print("Successfull opened connection to database at \(self.databasePath)")
@@ -44,6 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             var queryStatement: OpaquePointer? = nil
             var queryStatementString: String = "select * from entries"
             
+            //Here to create the query sequence, and assign the values out once read
             if sqlite3_prepare_v2(db, queryStatementString, -1, &queryStatement, nil) == SQLITE_OK{
                 
                 while sqlite3_step(queryStatement) == SQLITE_ROW{
@@ -81,13 +93,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }
     
+    //Checks to see if the db exists, and if not creates is
     func checkAndCreateDatabase(){
         
         var success = false
         let fileManager = FileManager.default
         
         success = fileManager.fileExists(atPath: databasePath!)
-        
+        //Here to check and see if the db exists, and if not will create it from the files in
+        //Xcode
         if success {
             return
         }
