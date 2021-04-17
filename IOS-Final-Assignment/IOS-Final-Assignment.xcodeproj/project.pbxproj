@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F586379F262B3CC700B836C7 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F586379E262B3CC700B836C7 /* NewsViewController.swift */; };
+		F58637A2262B3E5400B836C7 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58637A1262B3E5400B836C7 /* Article.swift */; };
+		F58637A5262B3EB000B836C7 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58637A4262B3EB000B836C7 /* ArticleCell.swift */; };
+		F58637A8262B405800B836C7 /* NewsWebviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58637A7262B405800B836C7 /* NewsWebviewViewController.swift */; };
 		FDC87E432608DA4D00BA8201 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87E422608DA4D00BA8201 /* AppDelegate.swift */; };
 		FDC87E452608DA4D00BA8201 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87E442608DA4D00BA8201 /* SceneDelegate.swift */; };
 		FDC87E472608DA4D00BA8201 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87E462608DA4D00BA8201 /* ViewController.swift */; };
@@ -36,6 +40,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F586379E262B3CC700B836C7 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		F58637A1262B3E5400B836C7 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		F58637A4262B3EB000B836C7 /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		F58637A7262B405800B836C7 /* NewsWebviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsWebviewViewController.swift; sourceTree = "<group>"; };
 		FDC87E3F2608DA4D00BA8201 /* IOS-Final-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-Final-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDC87E422608DA4D00BA8201 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDC87E442608DA4D00BA8201 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +139,8 @@
 				FDC87E422608DA4D00BA8201 /* AppDelegate.swift */,
 				FDC87E442608DA4D00BA8201 /* SceneDelegate.swift */,
 				FDC87EE22624A45100BA8201 /* Data.swift */,
+				F58637A1262B3E5400B836C7 /* Article.swift */,
+				F58637A4262B3EB000B836C7 /* ArticleCell.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -164,6 +174,8 @@
 				FDC87E6C26090D9800BA8201 /* TwitterViewController.swift */,
 				FDC87E6F2609100800BA8201 /* AboutUsViewController.swift */,
 				FDC87ED52620EBAE00BA8201 /* LinkedInViewController.swift */,
+				F586379E262B3CC700B836C7 /* NewsViewController.swift */,
+				F58637A7262B405800B836C7 /* NewsWebviewViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -263,9 +275,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F58637A5262B3EB000B836C7 /* ArticleCell.swift in Sources */,
 				FDC87E702609100800BA8201 /* AboutUsViewController.swift in Sources */,
 				FDC87EC42610D83300BA8201 /* SiteCell.swift in Sources */,
 				FDC87E6726090D7700BA8201 /* CountryStatsViewController.swift in Sources */,
+				F58637A8262B405800B836C7 /* NewsWebviewViewController.swift in Sources */,
 				FDC87E5E26090D3500BA8201 /* AwarenessViewController.swift in Sources */,
 				FDC87E6426090D5400BA8201 /* CountryListViewController.swift in Sources */,
 				FDC87E472608DA4D00BA8201 /* ViewController.swift in Sources */,
@@ -274,8 +288,10 @@
 				FDC87EE32624A45100BA8201 /* Data.swift in Sources */,
 				FDC87ED62620EBAE00BA8201 /* LinkedInViewController.swift in Sources */,
 				FDC87E6D26090D9800BA8201 /* TwitterViewController.swift in Sources */,
+				F586379F262B3CC700B836C7 /* NewsViewController.swift in Sources */,
 				FDC87E452608DA4D00BA8201 /* SceneDelegate.swift in Sources */,
 				FDC87E6A26090D8800BA8201 /* WhoInfoViewController.swift in Sources */,
+				F58637A2262B3E5400B836C7 /* Article.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
