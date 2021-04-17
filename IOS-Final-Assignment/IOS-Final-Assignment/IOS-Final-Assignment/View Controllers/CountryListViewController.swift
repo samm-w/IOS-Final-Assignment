@@ -22,7 +22,9 @@ class getData: ObservableObject {
         
     }
     
-    
+    /*
+    function that retrives the data from the api given in a json format and parses the data into the needed strings.
+    */
     func updateData(country:String){
         print(country)
         
@@ -54,19 +56,10 @@ class getData: ObservableObject {
     }
     
 }
-func getValue(data:Double) -> String{
-    let format = NumberFormatter()
-    format.numberStyle = .decimal
-    return format.string(from: NSNumber(value: data))!
-}
-func getImage(imageString:String) -> UIImage{
-    let imageUrl = URL(string: imageString)
-    let imageData = try!Data(contentsOf: imageUrl!)
-    let image = UIImage(data: imageData)
-    return image!
-    
-}
 
+ /*
+    view controller for contryList view
+    */
 class CountryListViewController: UIViewController {
 
     
@@ -82,6 +75,9 @@ class CountryListViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+     /*
+        submit button IBAction.
+    */
     @IBAction func submit(sender : Any){
     
         let c = tfInput.text!
@@ -97,6 +93,9 @@ class CountryListViewController: UIViewController {
         let data = getData(country: c)
         data.updateData(country: c)
     }
+     /*
+    print button IB Action.
+    */
     @IBAction func printLabel(sender : Any){
         
         //update()
