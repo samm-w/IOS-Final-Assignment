@@ -5,7 +5,7 @@
 //  Created by  on 3/22/21.
 //  Description: Used to create any extra information on load, such as pulling in the users
 //  from the db into the app to be displayed
-
+//merger comment
 import UIKit
 import SQLite3
 
