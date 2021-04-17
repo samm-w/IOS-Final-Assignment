@@ -8,8 +8,10 @@
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
+		<key>NSAllowsArbitraryLoadsUsageDescription</key>
+		<dict/>
 		<key>NSAllowsArbitraryLoads</key>
-		<false/>
+		<true/>
 	</dict>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
