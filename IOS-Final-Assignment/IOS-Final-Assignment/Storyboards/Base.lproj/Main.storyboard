@@ -8,6 +8,92 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--News Webview View Controller-->
+        <scene sceneID="Iu7-2A-nCM">
+            <objects>
+                <viewController storyboardIdentifier="web" id="vHn-Yc-A2u" customClass="NewsWebviewViewController" customModule="IOS_Final_Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PP0-I8-g2P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="36W-th-gd5">
+                                <rect key="frame" x="0.0" y="33" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="News Webpage" id="Pua-dW-JtV">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="xlq-7d-Vhr">
+                                            <connections>
+                                                <segue destination="2wT-vO-4vd" kind="show" id="Trz-GE-1LG"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5yE-Pl-qkn">
+                                <rect key="frame" x="0.0" y="77" width="414" height="785"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oCJ-Jg-3d3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="5yE-Pl-qkn" id="TzP-wq-TQk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OEZ-1a-L7F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1669.5652173913045" y="87.723214285714278"/>
+        </scene>
+        <!--News View Controller-->
+        <scene sceneID="IGi-hh-LLW">
+            <objects>
+                <viewController id="2wT-vO-4vd" customClass="NewsViewController" customModule="IOS_Final_Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hl5-lx-iQ8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XOy-Jb-oeA">
+                                <rect key="frame" x="0.0" y="57" width="414" height="751"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="2wT-vO-4vd" id="WuN-zs-9Sg"/>
+                                    <outlet property="delegate" destination="2wT-vO-4vd" id="3BN-2J-SAI"/>
+                                </connections>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mrb-w5-x0d">
+                                <rect key="frame" x="0.0" y="1" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="News" id="oXs-5S-FNW">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="sDH-rC-lbK">
+                                            <connections>
+                                                <segue destination="QMa-fR-ggp" kind="unwind" unwindAction="unwindToHomeVCWithSender:" id="ZbG-Fm-tvT"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eno-0M-cRa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OOK-UJ-tQR"/>
+                    <connections>
+                        <outlet property="tableview" destination="XOy-Jb-oeA" id="bOI-Fh-lXy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WZy-nX-oEw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="QMa-fR-ggp" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-830.43478260869574" y="87.723214285714278"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -71,10 +157,35 @@
                                     <segue destination="Jk4-d2-OUs" kind="presentation" id="27d-r0-WEX"/>
                                 </connections>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Sie-Ws-T2T">
+                                <rect key="frame" x="85" y="746" width="244" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="volumeDidChangeWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="IdX-gd-XTw"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Volume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVN-er-rBG">
+                                <rect key="frame" x="179" y="664" width="57" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPt-Pa-Tzx">
+                                <rect key="frame" x="164" y="474" width="85" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Latest News"/>
+                                <connections>
+                                    <segue destination="2wT-vO-4vd" kind="presentation" id="HUp-7R-vht"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="volSlider" destination="Sie-Ws-T2T" id="cSz-bx-D4C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -124,7 +235,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Covid 19 Awareness" id="fzm-Lg-BGc">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="RYv-C9-2ff"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="RYv-C9-2ff">
+                                            <connections>
+                                                <segue destination="XCg-iF-X5t" kind="unwind" unwindAction="unwindToHomeVCWithSender:" id="xU3-a9-PPL"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -134,6 +249,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k4b-Qt-nGK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="XCg-iF-X5t" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1054" y="871"/>
         </scene>
@@ -193,31 +309,72 @@
                                 <rect key="frame" x="0.0" y="56" width="414" height="786"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Jk4-d2-OUs" id="bdr-t0-9oF"/>
+                                    <outlet property="delegate" destination="Jk4-d2-OUs" id="Rc7-fS-b9k"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8Fa-Ld-I7g"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <segue destination="kfM-WQ-nOZ" kind="presentation" identifier="ChooseSegueToView" id="yhd-K3-6vQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xqr-6D-HWC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="KYL-do-N6r" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2044.9275362318842" y="870.53571428571422"/>
         </scene>
-        <!--View Controller-->
+        <!--Linked In View Controller-->
         <scene sceneID="0UG-7C-CTg">
             <objects>
-                <viewController id="kfM-WQ-nOZ" sceneMemberID="viewController">
+                <viewController id="kfM-WQ-nOZ" customClass="LinkedInViewController" customModule="IOS_Final_Assignment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TWZ-x9-QyY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ACW-Q4-zim">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="View Developer" id="r9L-ba-BO6">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="0hG-wZ-3eu">
+                                            <connections>
+                                                <segue destination="4MY-9S-yEn" kind="unwind" unwindAction="unwindToAboutUsViewControllerWithSender:" id="UDk-KN-QMb"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E1c-Bt-NQb">
+                                <rect key="frame" x="0.0" y="57" width="414" height="785"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="H8I-0b-NWw">
+                                <rect key="frame" x="197" y="439" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" red="0.60739082479999995" green="0.98791018760000004" blue="1" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="bc6-xd-gub"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="activity" destination="H8I-0b-NWw" id="dNX-En-IkV"/>
+                        <outlet property="webView" destination="E1c-Bt-NQb" id="Raq-zy-LlZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="769-wE-a1I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="4MY-9S-yEn" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2809" y="900"/>
+            <point key="canvasLocation" x="2828.985507246377" y="870.53571428571422"/>
         </scene>
         <!--Vaccine View Controller-->
         <scene sceneID="8HV-3M-HXx">
@@ -237,29 +394,51 @@
                                                 <segue destination="KNT-FR-gdv" kind="unwind" unwindAction="unwindToHomeVCWithSender:" id="q7l-hh-tDD"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Let's Go!" id="ywW-be-I5w">
+                                            <connections>
+                                                <action selector="findNewLocation" destination="BxH-se-aRz" id="HVW-8T-FfR"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AHN-Sm-e93">
-                                <rect key="frame" x="0.0" y="55" width="414" height="787"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Where Do you want to go?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VcM-yv-BLN">
+                                <rect key="frame" x="20" y="73" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <outlet property="delegate" destination="BxH-se-aRz" id="no9-IP-WFN"/>
+                                    <outlet property="delegate" destination="BxH-se-aRz" id="hTw-P9-bF2"/>
                                 </connections>
+                            </textField>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="s51-fv-g2e">
+                                <rect key="frame" x="0.0" y="122" width="414" height="379"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IPI-nm-uAp">
+                                <rect key="frame" x="0.0" y="497" width="414" height="345"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BxH-se-aRz" id="alV-Ih-vs9"/>
+                                    <outlet property="delegate" destination="BxH-se-aRz" id="Yf9-X7-kEq"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wjz-rJ-M0L"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="M1Z-B7-s37"/>
                     <connections>
-                        <outlet property="mapView" destination="AHN-Sm-e93" id="xL4-yT-O33"/>
+                        <outlet property="myMapView" destination="s51-fv-g2e" id="gPu-3x-U3m"/>
+                        <outlet property="myTableView" destination="IPI-nm-uAp" id="v6u-Cl-ZXD"/>
+                        <outlet property="tfLocEntered" destination="VcM-yv-BLN" id="R1b-FO-nS5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P2v-uQ-IMa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="KNT-FR-gdv" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2996" y="146"/>
+            <point key="canvasLocation" x="2995.6521739130435" y="145.98214285714286"/>
         </scene>
         <!--Who Info View Controller-->
         <scene sceneID="KHf-aV-aW3">
@@ -312,6 +491,9 @@
             <point key="canvasLocation" x="368" y="871"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Trz-GE-1LG"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

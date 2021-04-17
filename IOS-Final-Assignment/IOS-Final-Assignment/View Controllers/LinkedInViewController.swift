@@ -1,41 +1,43 @@
 //
-//  WhoInfoViewController.swift
+//  LinkedInViewController.swift
 //  Principal Author: Sam Whelan
-//  Created by  on 3/22/21.
-//  Description: This class creates the web view for the WHO page that will provide
-//  information from the WHO website, and let users search for more COVID information
+//  Created by  on 4/9/21.
+//  Description: Displays a webview of each devs Github page when their name is clicked on
+//  in the about us page
 
 import UIKit
 import WebKit
 
-class WhoInfoViewController: UIViewController, WKNavigationDelegate{
+class LinkedInViewController: UIViewController, WKNavigationDelegate {
     
-    //Links to the webview on the page
+    //The webview that will display the Github page
     @IBOutlet var webView: WKWebView!
-    //Links to the indicator view so that the webview can show loading
+    //The activity view that will show while the webpage is not done loading
     @IBOutlet var activity: UIActivityIndicatorView!
     
-    //This method will allow the activity indicator to be animated and visible
+    //Will show the activity view while the web page is not done loading
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
-        activity.isHidden = false
         activity.startAnimating()
+        activity.isHidden = false
     }
     
-    //This method will hide the animation once the page is loaded
+    //Will hide the activity view once the loading is done
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        activity.isHidden = true
         activity.stopAnimating()
+        activity.isHidden = true
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        //Here to give access to main delegate
+        let mainDelegate = UIApplication.shared.delegate as! AppDelegate
         
-        //Creates the webview link once the string is entered below
-        let urlAddress = URL(string: "https://who.int/emergencies/diseases/novel-coronavirus-2019")
+        //Allows for the web view to pull the url from the app delegate array of devs
+        let urlAddress = URL(string: mainDelegate.selectedURL)
         let url = URLRequest(url: urlAddress!)
         webView.load(url)
         webView.navigationDelegate = self
-
         // Do any additional setup after loading the view.
     }
     
