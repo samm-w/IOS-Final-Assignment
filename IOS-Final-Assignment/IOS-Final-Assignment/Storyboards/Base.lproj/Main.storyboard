@@ -142,9 +142,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rzh-ag-0gb">
-                                <rect key="frame" x="134" y="423" width="147" height="30"/>
+                                <rect key="frame" x="169" y="423" width="77" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="COVID-19 Awareness"/>
+                                <state key="normal" title="DEAD LINK"/>
                                 <connections>
                                     <segue destination="7OP-Wf-SkE" kind="presentation" id="xcZ-Qx-USB"/>
                                 </connections>
@@ -177,6 +177,14 @@
                                 <state key="normal" title="Latest News"/>
                                 <connections>
                                     <segue destination="2wT-vO-4vd" kind="presentation" id="HUp-7R-vht"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rdf-AO-kz2">
+                                <rect key="frame" x="133" y="602" width="147" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="COVID-19 Awareness"/>
+                                <connections>
+                                    <segue destination="WGm-Q8-5v1" kind="presentation" id="eQz-nh-3Sl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -440,6 +448,146 @@
             </objects>
             <point key="canvasLocation" x="2995.6521739130435" y="145.98214285714286"/>
         </scene>
+        <!--About COVID-19-->
+        <scene sceneID="H2B-7A-6Pb">
+            <objects>
+                <viewController id="JHu-ZI-bLh" customClass="Tab1ViewController" customModule="IOS_Final_Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R0x-vA-jM3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BAt-Dc-DVu">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="About COVID-19" id="i8B-cv-9cc">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="MXj-Oj-OOj">
+                                            <connections>
+                                                <segue destination="fj5-Qa-RBM" kind="unwind" unwindAction="unwindToHomeVCWithSender:" id="W1q-7a-S0C"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJ3-pj-9dw">
+                                <rect key="frame" x="154" y="101" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text" base64-UTF8="YES">
+U3RheSBob21lIGFuZCBhd2F5IGZyb20gb3RoZXJzIGlmIHlvdSBmZWVsIHNpY2sgb3IgaGF2ZSBiZWVu
+IHRvbGQgdG8gaXNvbGF0ZSBvciBxdWFyYW50aW5lLgA
+</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suc-fC-1l5">
+                                <rect key="frame" x="154" y="321" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text" base64-UTF8="YES">
+QXZvaWQgY2xvc2VkIHNwYWNlcyAod2l0aCBwb29yIHZlbnRpbGF0aW9uKSwgYW5kIGNyb3dkZWQgcGxh
+Y2VzIHdpdGggcGVvcGxlIGZyb20gb3V0c2lkZSBvZiB5b3VyIGltbWVkaWF0ZSBob3VzZWhvbGQuAA
+</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pic3" translatesAutoresizingMaskIntoConstraints="NO" id="Gtr-5e-pHj">
+                                <rect key="frame" x="20" y="506" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhu-ar-8PP">
+                                <rect key="frame" x="154" y="525" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text" base64-UTF8="YES">
+Q29uc2lkZXIgdGhlIGltcGFjdCBvbiB5b3VyIGxpdmVsaWhvb2QgYW5kIHBlcnNvbmFsIGNpcmN1bXN0
+YW5jZXMgaWYgeW91IG5lZWQgdG8gcXVhcmFudGluZSBvciBpc29sYXRlLgA
+</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sMQ-Ki-JoV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About COVID-19" id="uNj-eH-Le0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ly3-qC-CVl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="fj5-Qa-RBM" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-1446.376811594203" y="1665.4017857142856"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="9JV-8u-Erb">
+            <objects>
+                <tabBarController id="WGm-Q8-5v1" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zyL-o8-BBf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="JHu-ZI-bLh" kind="relationship" relationship="viewControllers" id="TvW-iF-abN"/>
+                        <segue destination="GSb-Bx-3g2" kind="relationship" relationship="viewControllers" id="9ky-3w-Z98"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xcF-cm-hcP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-930" y="954"/>
+        </scene>
+        <!--Additional Resources-->
+        <scene sceneID="87g-WT-AiZ">
+            <objects>
+                <viewController id="GSb-Bx-3g2" customClass="Tab2ViewController" customModule="IOS_Final_Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F4z-gU-Itq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wHb-aj-6J0">
+                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="1pT-AD-puE">
+                                <rect key="frame" x="197" y="369" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" red="0.26484133692498213" green="1" blue="0.96372070250262809" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pP8-Wd-dmV">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Additional Resources" id="Gnl-va-jKB">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="bTl-PW-U3p">
+                                            <connections>
+                                                <segue destination="0On-VU-Gpm" kind="unwind" unwindAction="unwindToHomeVCWithSender:" id="p6Z-vL-hfc"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1Xj-Ad-2IE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Additional Resources" id="Xk9-YC-Q0A"/>
+                    <connections>
+                        <outlet property="activity" destination="1pT-AD-puE" id="KgW-Nn-5jP"/>
+                        <outlet property="webView" destination="wHb-aj-6J0" id="Ik2-m0-a7Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T9i-Xb-Ve5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="0On-VU-Gpm" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-442.02898550724643" y="1665.4017857142856"/>
+        </scene>
         <!--Who Info View Controller-->
         <scene sceneID="KHf-aV-aW3">
             <objects>
@@ -492,9 +640,13 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Trz-GE-1LG"/>
+        <segue reference="HUp-7R-vht"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="pic3" width="40" height="40"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
