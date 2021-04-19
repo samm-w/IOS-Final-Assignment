@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     //The path to the db in the phone
     var databasePath: String?
     //The array of devs that will be called in
-    var people: [Data] = []
+    var people: [Users] = []
     
     
     //Once the app has launched, this will search for the db in the phone, and create a db if
@@ -69,7 +69,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     let program = String(cString: cProgram!)
                     let url = String(cString: cUrl!)
                     
-                    let data : Data = Data.init()
+                    let data : Users = Users.init()
                     data.initWithData(theRow: id, theName: name, theProgram: program, theUrl: url)
                     people.append(data)
                     

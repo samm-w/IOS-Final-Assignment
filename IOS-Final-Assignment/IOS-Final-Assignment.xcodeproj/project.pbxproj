@@ -19,12 +19,9 @@
 		FDC87E4A2608DA4D00BA8201 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDC87E482608DA4D00BA8201 /* Main.storyboard */; };
 		FDC87E4C2608DA4D00BA8201 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDC87E4B2608DA4D00BA8201 /* Assets.xcassets */; };
 		FDC87E4F2608DA4D00BA8201 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDC87E4D2608DA4D00BA8201 /* LaunchScreen.storyboard */; };
-		FDC87E5E26090D3500BA8201 /* AwarenessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87E5D26090D3400BA8201 /* AwarenessViewController.swift */; };
 		FDC87E6126090D4600BA8201 /* VaccineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87E6026090D4600BA8201 /* VaccineViewController.swift */; };
 		FDC87E6426090D5400BA8201 /* CountryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87E6326090D5400BA8201 /* CountryListViewController.swift */; };
-		FDC87E6726090D7700BA8201 /* CountryStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87E6626090D7700BA8201 /* CountryStatsViewController.swift */; };
 		FDC87E6A26090D8800BA8201 /* WhoInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87E6926090D8800BA8201 /* WhoInfoViewController.swift */; };
-		FDC87E6D26090D9800BA8201 /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87E6C26090D9800BA8201 /* TwitterViewController.swift */; };
 		FDC87E702609100800BA8201 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87E6F2609100800BA8201 /* AboutUsViewController.swift */; };
 		FDC87E82260C131900BA8201 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC87E81260C131900BA8201 /* MapKit.framework */; };
 		FDC87EC42610D83300BA8201 /* SiteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87EC32610D83300BA8201 /* SiteCell.swift */; };
@@ -35,10 +32,11 @@
 		FDC87ED62620EBAE00BA8201 /* LinkedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87ED52620EBAE00BA8201 /* LinkedInViewController.swift */; };
 		FDC87ED92620F80B00BA8201 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC87ED82620F80B00BA8201 /* WebKit.framework */; };
 		FDC87EE0262486E100BA8201 /* AboutUs.db in Resources */ = {isa = PBXBuildFile; fileRef = FDC87EDF262486E100BA8201 /* AboutUs.db */; };
-		FDC87EE32624A45100BA8201 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87EE22624A45100BA8201 /* Data.swift */; };
 		FDC87EE62624BDF200BA8201 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC87EE52624BDEA00BA8201 /* libsqlite3.0.tbd */; };
 		FDC87EE92624BE0400BA8201 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC87EE82624BDFC00BA8201 /* libsqlite3.tbd */; };
 		FDC87EED262A0C2500BA8201 /* Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDC87EEC262A0C2500BA8201 /* Background.jpg */; };
+		FDC87EFA262E21E300BA8201 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87EF9262E21E300BA8201 /* Country.swift */; };
+		FDC87EFD262E233200BA8201 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87EFC262E233200BA8201 /* Users.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,12 +54,9 @@
 		FDC87E4B2608DA4D00BA8201 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDC87E4E2608DA4D00BA8201 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDC87E502608DA4D00BA8201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FDC87E5D26090D3400BA8201 /* AwarenessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwarenessViewController.swift; sourceTree = "<group>"; };
 		FDC87E6026090D4600BA8201 /* VaccineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccineViewController.swift; sourceTree = "<group>"; };
 		FDC87E6326090D5400BA8201 /* CountryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListViewController.swift; sourceTree = "<group>"; };
-		FDC87E6626090D7700BA8201 /* CountryStatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryStatsViewController.swift; sourceTree = "<group>"; };
 		FDC87E6926090D8800BA8201 /* WhoInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoInfoViewController.swift; sourceTree = "<group>"; };
-		FDC87E6C26090D9800BA8201 /* TwitterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
 		FDC87E6F2609100800BA8201 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		FDC87E81260C131900BA8201 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		FDC87EC32610D83300BA8201 /* SiteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiteCell.swift; sourceTree = "<group>"; };
@@ -72,10 +67,11 @@
 		FDC87ED52620EBAE00BA8201 /* LinkedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedInViewController.swift; sourceTree = "<group>"; };
 		FDC87ED82620F80B00BA8201 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/PrivateFrameworks/WebKit.framework; sourceTree = SDKROOT; };
 		FDC87EDF262486E100BA8201 /* AboutUs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = AboutUs.db; sourceTree = "<group>"; };
-		FDC87EE22624A45100BA8201 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		FDC87EE52624BDEA00BA8201 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		FDC87EE82624BDFC00BA8201 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		FDC87EEC262A0C2500BA8201 /* Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Background.jpg; sourceTree = "<group>"; };
+		FDC87EF9262E21E300BA8201 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		FDC87EFC262E233200BA8201 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,9 +138,10 @@
 				FDC87EC32610D83300BA8201 /* SiteCell.swift */,
 				FDC87E422608DA4D00BA8201 /* AppDelegate.swift */,
 				FDC87E442608DA4D00BA8201 /* SceneDelegate.swift */,
-				FDC87EE22624A45100BA8201 /* Data.swift */,
 				F58637A1262B3E5400B836C7 /* Article.swift */,
 				F58637A4262B3EB000B836C7 /* ArticleCell.swift */,
+				FDC87EF9262E21E300BA8201 /* Country.swift */,
+				FDC87EFC262E233200BA8201 /* Users.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -170,12 +167,9 @@
 			isa = PBXGroup;
 			children = (
 				FDC87E462608DA4D00BA8201 /* ViewController.swift */,
-				FDC87E5D26090D3400BA8201 /* AwarenessViewController.swift */,
 				FDC87E6026090D4600BA8201 /* VaccineViewController.swift */,
 				FDC87E6326090D5400BA8201 /* CountryListViewController.swift */,
-				FDC87E6626090D7700BA8201 /* CountryStatsViewController.swift */,
 				FDC87E6926090D8800BA8201 /* WhoInfoViewController.swift */,
-				FDC87E6C26090D9800BA8201 /* TwitterViewController.swift */,
 				FDC87E6F2609100800BA8201 /* AboutUsViewController.swift */,
 				FDC87ED52620EBAE00BA8201 /* LinkedInViewController.swift */,
 				F586379E262B3CC700B836C7 /* NewsViewController.swift */,
@@ -284,18 +278,16 @@
 				F58637A5262B3EB000B836C7 /* ArticleCell.swift in Sources */,
 				FDC87E702609100800BA8201 /* AboutUsViewController.swift in Sources */,
 				FDC87EC42610D83300BA8201 /* SiteCell.swift in Sources */,
-				FDC87E6726090D7700BA8201 /* CountryStatsViewController.swift in Sources */,
 				F58637A8262B405800B836C7 /* NewsWebviewViewController.swift in Sources */,
-				FDC87E5E26090D3500BA8201 /* AwarenessViewController.swift in Sources */,
 				F5F4D347262C8F8600A73296 /* Tab1ViewController.swift in Sources */,
 				FDC87E6426090D5400BA8201 /* CountryListViewController.swift in Sources */,
+				FDC87EFA262E21E300BA8201 /* Country.swift in Sources */,
 				F5F4D34A262C9FC900A73296 /* Tab2ViewController.swift in Sources */,
 				FDC87E472608DA4D00BA8201 /* ViewController.swift in Sources */,
 				FDC87E432608DA4D00BA8201 /* AppDelegate.swift in Sources */,
+				FDC87EFD262E233200BA8201 /* Users.swift in Sources */,
 				FDC87E6126090D4600BA8201 /* VaccineViewController.swift in Sources */,
-				FDC87EE32624A45100BA8201 /* Data.swift in Sources */,
 				FDC87ED62620EBAE00BA8201 /* LinkedInViewController.swift in Sources */,
-				FDC87E6D26090D9800BA8201 /* TwitterViewController.swift in Sources */,
 				F586379F262B3CC700B836C7 /* NewsViewController.swift in Sources */,
 				FDC87E452608DA4D00BA8201 /* SceneDelegate.swift in Sources */,
 				FDC87E6A26090D8800BA8201 /* WhoInfoViewController.swift in Sources */,
