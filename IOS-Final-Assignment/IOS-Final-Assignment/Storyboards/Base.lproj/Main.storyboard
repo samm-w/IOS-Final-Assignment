@@ -19,9 +19,14 @@
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="36W-th-gd5">
                                 <rect key="frame" x="0.0" y="33" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" systemColor="opaqueSeparatorColor"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                                    <color key="textColor" systemColor="linkColor"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="News Webpage" id="Pua-dW-JtV">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="xlq-7d-Vhr">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" image="return" catalog="system" id="xlq-7d-Vhr">
                                             <connections>
                                                 <segue destination="2wT-vO-4vd" kind="show" id="Trz-GE-1LG"/>
                                             </connections>
@@ -70,9 +75,14 @@
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mrb-w5-x0d">
                                 <rect key="frame" x="0.0" y="1" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" systemColor="opaqueSeparatorColor"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                                    <color key="textColor" systemColor="linkColor"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="News" id="oXs-5S-FNW">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="sDH-rC-lbK">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" image="return" catalog="system" id="sDH-rC-lbK">
                                             <connections>
                                                 <segue destination="QMa-fR-ggp" kind="unwind" unwindAction="unwindToHomeVCWithSender:" id="ZbG-Fm-tvT"/>
                                             </connections>
@@ -102,91 +112,97 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="COVID-19 Tracker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irX-LS-E6L">
-                                <rect key="frame" x="77" y="74" width="261" height="44"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="yYp-fK-Va4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="COVID-19 Tracker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irX-LS-E6L">
+                                <rect key="frame" x="70" y="70" width="300" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="32"/>
+                                <color key="textColor" red="0.1889838744" green="1" blue="0.24556742179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4R5-bH-bj2">
-                                <rect key="frame" x="165" y="200" width="84" height="30"/>
+                                <rect key="frame" x="120" y="209" width="210" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Country List"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                <state key="normal" title="Country List">
+                                    <color key="titleColor" red="0.1889838744" green="1" blue="0.24556742179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="7Ym-xY-37e" kind="presentation" id="5v7-3R-6IP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8t-Af-SoK">
-                                <rect key="frame" x="152" y="252" width="110" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Twitter Updates"/>
-                                <connections>
-                                    <segue destination="ANg-3H-C5W" kind="presentation" id="5E0-dj-5HQ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rl-vq-x4f">
-                                <rect key="frame" x="135" y="309" width="145" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Vaccines and Testing"/>
-                                <connections>
-                                    <segue destination="BxH-se-aRz" kind="presentation" id="DpZ-gt-RjS"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erp-46-bHK">
-                                <rect key="frame" x="148" y="374" width="119" height="30"/>
+                                <rect key="frame" x="120" y="350" width="210" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="WHO Information"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                <state key="normal" title="WHO Information">
+                                    <color key="titleColor" red="0.1889838744" green="1" blue="0.24556742179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="UoS-6i-KYw" kind="presentation" id="7At-kx-f9i"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rzh-ag-0gb">
-                                <rect key="frame" x="169" y="423" width="77" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="DEAD LINK"/>
-                                <connections>
-                                    <segue destination="7OP-Wf-SkE" kind="presentation" id="xcZ-Qx-USB"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNW-aU-Y4a">
-                                <rect key="frame" x="175" y="512" width="64" height="82"/>
+                                <rect key="frame" x="120" y="490" width="210" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="About Us"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                <state key="normal" title="About Us">
+                                    <color key="titleColor" red="0.1889838744" green="1" blue="0.24556742179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="Jk4-d2-OUs" kind="presentation" id="27d-r0-WEX"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Sie-Ws-T2T">
-                                <rect key="frame" x="85" y="746" width="244" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="volumeDidChangeWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="IdX-gd-XTw"/>
-                                </connections>
-                            </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Volume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVN-er-rBG">
-                                <rect key="frame" x="179" y="664" width="57" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPt-Pa-Tzx">
-                                <rect key="frame" x="164" y="474" width="85" height="30"/>
+                                <rect key="frame" x="120" y="420" width="210" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Latest News"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                <state key="normal" title="Latest News">
+                                    <color key="titleColor" red="0.1889838744" green="1" blue="0.24556742179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="2wT-vO-4vd" kind="presentation" id="HUp-7R-vht"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rdf-AO-kz2">
-                                <rect key="frame" x="133" y="602" width="147" height="30"/>
+                                <rect key="frame" x="120" y="560" width="210" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="COVID-19 Awareness"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                <state key="normal" title="COVID-19 Awareness">
+                                    <color key="titleColor" red="0.1889838744" green="1" blue="0.24556742179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="WGm-Q8-5v1" kind="presentation" id="eQz-nh-3Sl"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rl-vq-x4f">
+                                <rect key="frame" x="120" y="280" width="210" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                <state key="normal" title="Vaccines and Testing">
+                                    <color key="titleColor" red="0.1889838744" green="1" blue="0.24556742179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BxH-se-aRz" kind="presentation" id="DpZ-gt-RjS"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="music.note" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="HVA-Kz-Gg6">
+                                <rect key="frame" x="185" y="795" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.1889838744" green="1" blue="0.24556742179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Sie-Ws-T2T">
+                                <rect key="frame" x="100" y="750" width="250" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" red="0.1889838744" green="1" blue="0.24556742179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" red="0.1889838744" green="1" blue="0.24556742179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="volumeDidChangeWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="IdX-gd-XTw"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -210,9 +226,17 @@
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bo3-Nz-a1X">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" systemColor="opaqueSeparatorColor"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                                    <color key="textColor" systemColor="linkColor"/>
+                                </textAttributes>
+                                <textAttributes key="largeTitleTextAttributes">
+                                    <color key="textColor" systemColor="linkColor"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="Country List" id="kFL-1P-ohc">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="o3w-XC-e3L">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" image="return" catalog="system" id="o3w-XC-e3L">
                                             <connections>
                                                 <segue destination="KG9-J6-ITK" kind="unwind" unwindAction="unwindToHomeVCWithSender:" id="Jie-QG-MR2"/>
                                             </connections>
@@ -230,68 +254,6 @@
             </objects>
             <point key="canvasLocation" x="1042" y="110"/>
         </scene>
-        <!--Awareness View Controller-->
-        <scene sceneID="pYe-0h-ouR">
-            <objects>
-                <viewController id="7OP-Wf-SkE" customClass="AwarenessViewController" customModule="IOS_Final_Assignment" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="L9E-FW-Iqp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lQV-wW-hrx">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Covid 19 Awareness" id="fzm-Lg-BGc">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="RYv-C9-2ff">
-                                            <connections>
-                                                <segue destination="XCg-iF-X5t" kind="unwind" unwindAction="unwindToHomeVCWithSender:" id="xU3-a9-PPL"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="GZw-g9-VY4"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="k4b-Qt-nGK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="XCg-iF-X5t" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="1054" y="871"/>
-        </scene>
-        <!--Twitter View Controller-->
-        <scene sceneID="SRm-eg-z0s">
-            <objects>
-                <viewController id="ANg-3H-C5W" customClass="TwitterViewController" customModule="IOS_Final_Assignment" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Kof-yz-M1J">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V0d-qU-fGo">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Twitter Updates" id="4OC-CI-TtY">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="oPS-ef-17w">
-                                            <connections>
-                                                <segue destination="pkR-7E-7xE" kind="unwind" unwindAction="unwindToHomeVCWithSender:" id="mmG-qM-EvZ"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="F7o-r2-qhH"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LDV-yC-IZI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="pkR-7E-7xE" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="1958" y="127"/>
-        </scene>
         <!--About Us View Controller-->
         <scene sceneID="aLd-d6-cqD">
             <objects>
@@ -303,9 +265,14 @@
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yiy-XM-M1H">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" systemColor="opaqueSeparatorColor"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
+                                    <color key="textColor" systemColor="linkColor"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="About Us" id="hJl-8k-6iG">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="f9C-wS-KSm">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" image="return" catalog="system" id="f9C-wS-KSm">
                                             <connections>
                                                 <segue destination="KYL-do-N6r" kind="unwind" unwindAction="unwindToHomeVCWithSender:" id="Vhz-sV-HVd"/>
                                             </connections>
@@ -333,7 +300,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xqr-6D-HWC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="KYL-do-N6r" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2044.9275362318842" y="870.53571428571422"/>
+            <point key="canvasLocation" x="1207" y="871"/>
         </scene>
         <!--Linked In View Controller-->
         <scene sceneID="0UG-7C-CTg">
@@ -346,9 +313,14 @@
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ACW-Q4-zim">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" systemColor="opaqueSeparatorColor"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                                    <color key="textColor" systemColor="linkColor"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="View Developer" id="r9L-ba-BO6">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="0hG-wZ-3eu">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" image="return" catalog="system" id="0hG-wZ-3eu">
                                             <connections>
                                                 <segue destination="4MY-9S-yEn" kind="unwind" unwindAction="unwindToAboutUsViewControllerWithSender:" id="UDk-KN-QMb"/>
                                             </connections>
@@ -382,7 +354,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="769-wE-a1I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="4MY-9S-yEn" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2828.985507246377" y="870.53571428571422"/>
+            <point key="canvasLocation" x="1910" y="871"/>
         </scene>
         <!--Vaccine View Controller-->
         <scene sceneID="8HV-3M-HXx">
@@ -395,14 +367,19 @@
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W2I-3e-X3j">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" systemColor="opaqueSeparatorColor"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                                    <color key="textColor" systemColor="linkColor"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="Vaccine and Testing Locations" id="PFQ-23-DPt">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="t7M-s4-YJH">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" image="return" catalog="system" id="t7M-s4-YJH">
                                             <connections>
                                                 <segue destination="KNT-FR-gdv" kind="unwind" unwindAction="unwindToHomeVCWithSender:" id="q7l-hh-tDD"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Let's Go!" id="ywW-be-I5w">
+                                        <barButtonItem key="rightBarButtonItem" title="Let's Go!" image="paperplane" catalog="system" id="ywW-be-I5w">
                                             <connections>
                                                 <action selector="findNewLocation" destination="BxH-se-aRz" id="HVW-8T-FfR"/>
                                             </connections>
@@ -413,7 +390,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Where Do you want to go?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VcM-yv-BLN">
                                 <rect key="frame" x="20" y="73" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="BxH-se-aRz" id="hTw-P9-bF2"/>
@@ -446,7 +423,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P2v-uQ-IMa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="KNT-FR-gdv" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2995.6521739130435" y="145.98214285714286"/>
+            <point key="canvasLocation" x="2010" y="133"/>
         </scene>
         <!--About COVID-19-->
         <scene sceneID="H2B-7A-6Pb">
@@ -456,12 +433,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Zxk-fl-dBv">
+                                <rect key="frame" x="0.0" y="44" width="414" height="715"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BAt-Dc-DVu">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" systemColor="opaqueSeparatorColor"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                                    <color key="textColor" systemColor="linkColor"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="About COVID-19" id="i8B-cv-9cc">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="MXj-Oj-OOj">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" image="return" catalog="system" id="MXj-Oj-OOj">
                                             <connections>
                                                 <segue destination="fj5-Qa-RBM" kind="unwind" unwindAction="unwindToHomeVCWithSender:" id="W1q-7a-S0C"/>
                                             </connections>
@@ -513,7 +499,7 @@ YW5jZXMgaWYgeW91IG5lZWQgdG8gcXVhcmFudGluZSBvciBpc29sYXRlLgA
                         <viewLayoutGuide key="safeArea" id="sMQ-Ki-JoV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="About COVID-19" id="uNj-eH-Le0"/>
+                    <tabBarItem key="tabBarItem" title="About COVID-19" image="pic2" id="uNj-eH-Le0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ly3-qC-CVl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="fj5-Qa-RBM" userLabel="Exit" sceneMemberID="exit"/>
@@ -563,9 +549,14 @@ YW5jZXMgaWYgeW91IG5lZWQgdG8gcXVhcmFudGluZSBvciBpc29sYXRlLgA
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pP8-Wd-dmV">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" systemColor="opaqueSeparatorColor"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                                    <color key="textColor" systemColor="linkColor"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="Additional Resources" id="Gnl-va-jKB">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="bTl-PW-U3p">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" image="return" catalog="system" id="bTl-PW-U3p">
                                             <connections>
                                                 <segue destination="0On-VU-Gpm" kind="unwind" unwindAction="unwindToHomeVCWithSender:" id="p6Z-vL-hfc"/>
                                             </connections>
@@ -577,7 +568,9 @@ YW5jZXMgaWYgeW91IG5lZWQgdG8gcXVhcmFudGluZSBvciBpc29sYXRlLgA
                         <viewLayoutGuide key="safeArea" id="1Xj-Ad-2IE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Additional Resources" id="Xk9-YC-Q0A"/>
+                    <tabBarItem key="tabBarItem" title="Additional Resources" image="plus" catalog="system" id="Xk9-YC-Q0A">
+                        <color key="badgeColor" systemColor="opaqueSeparatorColor"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="activity" destination="1pT-AD-puE" id="KgW-Nn-5jP"/>
                         <outlet property="webView" destination="wHb-aj-6J0" id="Ik2-m0-a7Z"/>
@@ -599,9 +592,14 @@ YW5jZXMgaWYgeW91IG5lZWQgdG8gcXVhcmFudGluZSBvciBpc29sYXRlLgA
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uPM-N5-JzM">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" systemColor="opaqueSeparatorColor"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                                    <color key="textColor" systemColor="linkColor"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="WHO Website" id="EET-6I-5XI">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="Cgy-Xp-4gn">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" image="return" catalog="system" id="Cgy-Xp-4gn">
                                             <connections>
                                                 <segue destination="nYW-sb-A61" kind="unwind" unwindAction="unwindToHomeVCWithSender:" id="jDP-nr-umU"/>
                                             </connections>
@@ -643,9 +641,21 @@ YW5jZXMgaWYgeW91IG5lZWQgdG8gcXVhcmFudGluZSBvciBpc29sYXRlLgA
         <segue reference="HUp-7R-vht"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="Background.jpg" width="152" height="331"/>
+        <image name="music.note" catalog="system" width="97" height="128"/>
+        <image name="paperplane" catalog="system" width="128" height="118"/>
+        <image name="pic2" width="40" height="40"/>
         <image name="pic3" width="40" height="40"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="return" catalog="system" width="128" height="101"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
