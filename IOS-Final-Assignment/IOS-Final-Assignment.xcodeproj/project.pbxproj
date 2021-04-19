@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F586379F262B3CC700B836C7 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F586379E262B3CC700B836C7 /* NewsViewController.swift */; };
-		F58637A2262B3E5400B836C7 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58637A1262B3E5400B836C7 /* Article.swift */; };
-		F58637A5262B3EB000B836C7 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58637A4262B3EB000B836C7 /* ArticleCell.swift */; };
-		F58637A8262B405800B836C7 /* NewsWebviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58637A7262B405800B836C7 /* NewsWebviewViewController.swift */; };
+		8E28E2CA26111FDD00F7B77A /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E28E2C926111FDD00F7B77A /* Country.swift */; };
 		FDC87E432608DA4D00BA8201 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87E422608DA4D00BA8201 /* AppDelegate.swift */; };
 		FDC87E452608DA4D00BA8201 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87E442608DA4D00BA8201 /* SceneDelegate.swift */; };
 		FDC87E472608DA4D00BA8201 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87E462608DA4D00BA8201 /* ViewController.swift */; };
@@ -26,24 +23,10 @@
 		FDC87E702609100800BA8201 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87E6F2609100800BA8201 /* AboutUsViewController.swift */; };
 		FDC87E82260C131900BA8201 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC87E81260C131900BA8201 /* MapKit.framework */; };
 		FDC87EC42610D83300BA8201 /* SiteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87EC32610D83300BA8201 /* SiteCell.swift */; };
-		FDC87EC8261A16BA00BA8201 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC87EC7261A16BA00BA8201 /* CoreLocation.framework */; };
-		FDC87ECD261F659000BA8201 /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FDC87ECC261F659000BA8201 /* song.mp3 */; };
-		FDC87ED1261F6A8200BA8201 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC87ED0261F6A8200BA8201 /* AVFoundation.framework */; };
-		FDC87ED3261F6A9000BA8201 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC87ED2261F6A9000BA8201 /* QuartzCore.framework */; };
-		FDC87ED62620EBAE00BA8201 /* LinkedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87ED52620EBAE00BA8201 /* LinkedInViewController.swift */; };
-		FDC87ED92620F80B00BA8201 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC87ED82620F80B00BA8201 /* WebKit.framework */; };
-		FDC87EE0262486E100BA8201 /* AboutUs.db in Resources */ = {isa = PBXBuildFile; fileRef = FDC87EDF262486E100BA8201 /* AboutUs.db */; };
-		FDC87EE32624A45100BA8201 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC87EE22624A45100BA8201 /* Data.swift */; };
-		FDC87EE62624BDF200BA8201 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC87EE52624BDEA00BA8201 /* libsqlite3.0.tbd */; };
-		FDC87EE92624BE0400BA8201 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC87EE82624BDFC00BA8201 /* libsqlite3.tbd */; };
-		FDC87EED262A0C2500BA8201 /* Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDC87EEC262A0C2500BA8201 /* Background.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F586379E262B3CC700B836C7 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
-		F58637A1262B3E5400B836C7 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
-		F58637A4262B3EB000B836C7 /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
-		F58637A7262B405800B836C7 /* NewsWebviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsWebviewViewController.swift; sourceTree = "<group>"; };
+		8E28E2C926111FDD00F7B77A /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		FDC87E3F2608DA4D00BA8201 /* IOS-Final-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-Final-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDC87E422608DA4D00BA8201 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDC87E442608DA4D00BA8201 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,17 +44,6 @@
 		FDC87E6F2609100800BA8201 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		FDC87E81260C131900BA8201 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		FDC87EC32610D83300BA8201 /* SiteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiteCell.swift; sourceTree = "<group>"; };
-		FDC87EC7261A16BA00BA8201 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		FDC87ECC261F659000BA8201 /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song.mp3; sourceTree = "<group>"; };
-		FDC87ED0261F6A8200BA8201 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		FDC87ED2261F6A9000BA8201 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		FDC87ED52620EBAE00BA8201 /* LinkedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedInViewController.swift; sourceTree = "<group>"; };
-		FDC87ED82620F80B00BA8201 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/PrivateFrameworks/WebKit.framework; sourceTree = SDKROOT; };
-		FDC87EDF262486E100BA8201 /* AboutUs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = AboutUs.db; sourceTree = "<group>"; };
-		FDC87EE22624A45100BA8201 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		FDC87EE52624BDEA00BA8201 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
-		FDC87EE82624BDFC00BA8201 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		FDC87EEC262A0C2500BA8201 /* Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Background.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDC87ED92620F80B00BA8201 /* WebKit.framework in Frameworks */,
-				FDC87ED3261F6A9000BA8201 /* QuartzCore.framework in Frameworks */,
-				FDC87EE92624BE0400BA8201 /* libsqlite3.tbd in Frameworks */,
-				FDC87EE62624BDF200BA8201 /* libsqlite3.0.tbd in Frameworks */,
-				FDC87EC8261A16BA00BA8201 /* CoreLocation.framework in Frameworks */,
 				FDC87E82260C131900BA8201 /* MapKit.framework in Frameworks */,
-				FDC87ED1261F6A8200BA8201 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,7 +78,6 @@
 		FDC87E412608DA4D00BA8201 /* IOS-Final-Assignment */ = {
 			isa = PBXGroup;
 			children = (
-				FDC87ECB261F645800BA8201 /* Sounds */,
 				FDC87E5B2608DCF500BA8201 /* View Controllers */,
 				FDC87E5A2608DC7900BA8201 /* Databases */,
 				FDC87E592608DC7300BA8201 /* Images */,
@@ -138,9 +103,7 @@
 				FDC87EC32610D83300BA8201 /* SiteCell.swift */,
 				FDC87E422608DA4D00BA8201 /* AppDelegate.swift */,
 				FDC87E442608DA4D00BA8201 /* SceneDelegate.swift */,
-				FDC87EE22624A45100BA8201 /* Data.swift */,
-				F58637A1262B3E5400B836C7 /* Article.swift */,
-				F58637A4262B3EB000B836C7 /* ArticleCell.swift */,
+				8E28E2C926111FDD00F7B77A /* Country.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -148,7 +111,6 @@
 		FDC87E592608DC7300BA8201 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				FDC87EEC262A0C2500BA8201 /* Background.jpg */,
 				FDC87E4B2608DA4D00BA8201 /* Assets.xcassets */,
 			);
 			path = Images;
@@ -157,7 +119,6 @@
 		FDC87E5A2608DC7900BA8201 /* Databases */ = {
 			isa = PBXGroup;
 			children = (
-				FDC87EDF262486E100BA8201 /* AboutUs.db */,
 			);
 			path = Databases;
 			sourceTree = "<group>";
@@ -173,9 +134,6 @@
 				FDC87E6926090D8800BA8201 /* WhoInfoViewController.swift */,
 				FDC87E6C26090D9800BA8201 /* TwitterViewController.swift */,
 				FDC87E6F2609100800BA8201 /* AboutUsViewController.swift */,
-				FDC87ED52620EBAE00BA8201 /* LinkedInViewController.swift */,
-				F586379E262B3CC700B836C7 /* NewsViewController.swift */,
-				F58637A7262B405800B836C7 /* NewsWebviewViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -183,23 +141,9 @@
 		FDC87E80260C131900BA8201 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FDC87EE82624BDFC00BA8201 /* libsqlite3.tbd */,
-				FDC87EE52624BDEA00BA8201 /* libsqlite3.0.tbd */,
-				FDC87ED82620F80B00BA8201 /* WebKit.framework */,
-				FDC87ED2261F6A9000BA8201 /* QuartzCore.framework */,
-				FDC87ED0261F6A8200BA8201 /* AVFoundation.framework */,
-				FDC87EC7261A16BA00BA8201 /* CoreLocation.framework */,
 				FDC87E81260C131900BA8201 /* MapKit.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FDC87ECB261F645800BA8201 /* Sounds */ = {
-			isa = PBXGroup;
-			children = (
-				FDC87ECC261F659000BA8201 /* song.mp3 */,
-			);
-			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,12 +203,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDC87ECD261F659000BA8201 /* song.mp3 in Resources */,
-				FDC87EE0262486E100BA8201 /* AboutUs.db in Resources */,
 				FDC87E4F2608DA4D00BA8201 /* LaunchScreen.storyboard in Resources */,
 				FDC87E4C2608DA4D00BA8201 /* Assets.xcassets in Resources */,
 				FDC87E4A2608DA4D00BA8201 /* Main.storyboard in Resources */,
-				FDC87EED262A0C2500BA8201 /* Background.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,23 +216,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F58637A5262B3EB000B836C7 /* ArticleCell.swift in Sources */,
 				FDC87E702609100800BA8201 /* AboutUsViewController.swift in Sources */,
 				FDC87EC42610D83300BA8201 /* SiteCell.swift in Sources */,
 				FDC87E6726090D7700BA8201 /* CountryStatsViewController.swift in Sources */,
-				F58637A8262B405800B836C7 /* NewsWebviewViewController.swift in Sources */,
 				FDC87E5E26090D3500BA8201 /* AwarenessViewController.swift in Sources */,
+				8E28E2CA26111FDD00F7B77A /* Country.swift in Sources */,
 				FDC87E6426090D5400BA8201 /* CountryListViewController.swift in Sources */,
 				FDC87E472608DA4D00BA8201 /* ViewController.swift in Sources */,
 				FDC87E432608DA4D00BA8201 /* AppDelegate.swift in Sources */,
 				FDC87E6126090D4600BA8201 /* VaccineViewController.swift in Sources */,
-				FDC87EE32624A45100BA8201 /* Data.swift in Sources */,
-				FDC87ED62620EBAE00BA8201 /* LinkedInViewController.swift in Sources */,
 				FDC87E6D26090D9800BA8201 /* TwitterViewController.swift in Sources */,
-				F586379F262B3CC700B836C7 /* NewsViewController.swift in Sources */,
 				FDC87E452608DA4D00BA8201 /* SceneDelegate.swift in Sources */,
 				FDC87E6A26090D8800BA8201 /* WhoInfoViewController.swift in Sources */,
-				F58637A2262B3E5400B836C7 /* Article.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,10 +383,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Sam.IOS-Final-Assignment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
-				);
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -469,10 +401,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Sam.IOS-Final-Assignment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
-				);
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
