@@ -11,7 +11,7 @@ class AboutUsViewController: UIViewController, UITableViewDataSource, UITableVie
     
     //Calls the main delegate so that it can be accessed in this view controller
     let mainDelegate = UIApplication.shared.delegate as! AppDelegate
-    
+    @IBOutlet var tableView: UITableView!
     //Allows the GitHub web view link to be unwinded to this page
     @IBAction func unwindToAboutUsViewController(sender: UIStoryboardSegue){
         
@@ -52,7 +52,7 @@ class AboutUsViewController: UIViewController, UITableViewDataSource, UITableVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.backgroundView = UIImageView(image: UIImage(named: "Background.jpg"))
         mainDelegate.readDataFromDatabase()
         // Do any additional setup after loading the view.
     }

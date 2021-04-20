@@ -377,6 +377,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="RdP-x3-c9B" id="h1r-3f-ANc"/>
                         <segue destination="kfM-WQ-nOZ" kind="presentation" identifier="ChooseSegueToView" id="yhd-K3-6vQ"/>
                     </connections>
                 </viewController>

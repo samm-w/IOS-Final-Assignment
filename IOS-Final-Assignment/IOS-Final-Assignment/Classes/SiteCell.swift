@@ -17,12 +17,12 @@ class SiteCell: UITableViewCell {
         primaryLabel.textAlignment = .left
         primaryLabel.font = UIFont.boldSystemFont(ofSize: 30)
         primaryLabel.backgroundColor = .clear
-        primaryLabel.textColor = .black
+        primaryLabel.textColor = .systemGreen
         
         secondaryLabel.textAlignment = .left
         secondaryLabel.font = UIFont.boldSystemFont(ofSize: 12)
         secondaryLabel.backgroundColor = .clear
-        secondaryLabel.textColor = .blue
+        secondaryLabel.textColor = .systemBlue
         
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
