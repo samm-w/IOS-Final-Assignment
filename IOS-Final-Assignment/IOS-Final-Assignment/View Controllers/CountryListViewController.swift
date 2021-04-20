@@ -56,7 +56,7 @@ class getData: ObservableObject {
 }
 
 
-class CountryListViewController: UIViewController {
+class CountryListViewController: UIViewController, UITextFieldDelegate {
 
     
     @IBOutlet var lblCases : UILabel!
@@ -65,6 +65,11 @@ class CountryListViewController: UIViewController {
     @IBOutlet var lblActive : UILabel!
     @IBOutlet var lblFlag : UIImageView!
     @IBOutlet var tfInput : UITextField!
+    
+    //Returns the text field after the return key is pressed
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        return textField.resignFirstResponder()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
